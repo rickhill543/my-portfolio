@@ -1,0 +1,75 @@
+/* general styles */
+:root {
+    --primary-color: #98cecd;
+    --secondary-color: #475872;
+    --tertiary-color: #31343e;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header and nav section*/
+header {
+    background-color: var(--tertiary-color);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px 10px 0;
+
+}
+header h1 {
+    line-height: 1.3;
+    padding-right: 10px;
+    padding-left: 40px;
+    font-size: 38px;
+    color: var(--tertiary-color);
+}
+header nav ul {
+    display: flex;
+    margin-top: 10px;
+}
+header nav ul li {
+
+    list-style: none;
+}
+header nav ul li a {
+    padding: 5px;
+    margin: 0 5px;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 3px solid var(--primary-color);
+}
+.name-container {
+    background-color: var(--primary-color);
+}
+
+/* hero and tagline section */
+.hero {
+    background: url("../images/gh-portfolio-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+    width: 100%;
+}
+.hero h2 {
+    align-self: flex-end;
+    margin: 18px 8px;
+    padding: 5px;
+    background-color: var(--primary-color);
+    font-size: 32px;
+    color: var(--tertiary-color);
+}
+.profile-picture {
+    align-self: center;
+    margin-left: 18px;
+}
+.profile-picture img {
+    border: 4px solid var(--primary-color);
+    border-radius: 150px;
+}
