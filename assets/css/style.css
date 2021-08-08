@@ -11,7 +11,7 @@
 }
 .section-content {
     width: 80%;
-    margin: 30px 15% 30px 5%;
+    margin: 60px 15% 60px 5%;
 }
 .flex-2of2 {
     width: 80%;
@@ -124,7 +124,7 @@ header nav ul li a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 75px 10px;
 }
 .project-grid-item {
     position: relative;
@@ -154,7 +154,7 @@ header nav ul li a {
 .item-title {
     position: absolute;
     padding: 5px;
-    bottom: 15px;
+    bottom: 0;
     font-size: 14px;
     background: var(--primary-color);
     z-index: 10;
@@ -167,17 +167,25 @@ header nav ul li a {
 .item-title p {
     color: var(--secondary-color);
 }
+.item-description {
+    position: absolute;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
 .item-github {
     position: absolute;
     padding: 5px;
-    top: 5px;
-    right: 5px;
+    top: 0;
+    right: 0;
     font-size: 14px;
     z-index: 10;
     text-decoration: none;
     color: var(--primary-color);
-    background-color: #6b2a2a;
-    border-radius: 5px;
+    background-color: #ff4545;
+    border-bottom-left-radius: 5px;
 }
 .item-github:hover {
     background-color: black;
@@ -201,6 +209,8 @@ header nav ul li a {
 .contact-info ul {
     display: flex;
     justify-content: space-between;
+    width: 85%;
+    margin: auto;
 }
 .contact-info ul li {
     line-height: 1.5;
@@ -211,7 +221,7 @@ header nav ul li a {
     color: var(--tertiary-color);
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     padding: 10px 0;
 }
 
@@ -301,6 +311,10 @@ header nav ul li a {
     }
     .item-title p {
         font-size: 14px;
+    }
+    .item-description {
+        font-size: 18px;
+        color: white;
     }
     .contact-container {
         flex-direction: column;
